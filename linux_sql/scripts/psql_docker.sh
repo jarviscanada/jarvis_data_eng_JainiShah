@@ -42,7 +42,7 @@ if [[ $1 == "start" ]] | [[ $1 == "stop" ]] | [[ $1 == "create" ]]; then
   ;;
   esac
 else
-  echo please enter valid options
+  echo please enter valid options from start, stop or create with username nd password
 fi
 exit 0''
 
