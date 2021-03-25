@@ -31,7 +31,7 @@ if [[ $1 == "start" ]] | [[ $1 == "stop" ]] | [[ $1 == "create" ]] ; then
 else
   echo Please enter valid option
 fi
-#if [[ $2 -eqd 0 ]] ; then
+#if [[ $2 -eq 0 ]] ; then
 exit 0''
 
 
