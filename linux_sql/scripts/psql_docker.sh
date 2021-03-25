@@ -44,5 +44,5 @@ if [[ $1 == "start" ]] | [[ $1 == "stop" ]] | [[ $1 == "create" ]]; then
 else
   echo please enter valid options
 fi
-exit 0''
+
 
