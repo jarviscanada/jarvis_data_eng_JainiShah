@@ -21,3 +21,5 @@ cpu_mhz=$(lscpu | egrep "^CPU\sMHz:" | awk '{print $3}' | xargs)
 l2_cache=$(lscpu | egrep "^L2\scache:" | awk '{print $3}' | xargs)
 total_mem=$(cat proc/meminfo | egrep "MemTotal:" | awk '{print $2}' | xargs)
 timestamp=$(date +"%Y-%m-%d %H:%M:%S")
+
+exit 0
