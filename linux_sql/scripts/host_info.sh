@@ -24,7 +24,7 @@ total_mem=$(cat proc/meminfo | egrep "MemTotal:" | awk '{print $2}' | xargs)
 timestamp=$(date +"%Y-%m-%d %H:%M:%S")
 
 #Query to insert data into host_info table
-insert_stmnt="INSERT INTO host_info (hostname, cpu_number, cpu_architecture, cpu_model, cpu_mhz, l2_cache, total_mem, timestamp);"
+insert_stmnt="INSERT INTO host_info (hostname, cpu_number, cpu_architecture, cpu_model, cpu_mhz, l2_cache, total_mem, timestamp) VALUES('$hostname', $cpu_number, '$cpu_architecture', '$cpu_model', $cpu_mhz, $l2_cache, $total_mem, '$timestamp');"
 
 #Executing Insert statement through psql CLI tool
 psql -h localhost -U postgres -d host_agent -c "$insert_stmnt"
