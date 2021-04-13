@@ -8,7 +8,7 @@ The Linux Cluster Monitoring Agent tool help users to record the hardware specif
 ````
 - Create tables using ddl.sql
 ````bash
-../sql/ddl.sql 
+./sql/ddl.sql 
 ````
 - Insert hardware specs data into the db using host_info.sh
 ````bash
@@ -24,8 +24,10 @@ crontab -e
 ````
 
 # Implementation
+A postgreSQL instance is provisioned by creating and starting a docker container. The program is implemented using linux command lines and scripts like host_info.sh and host_usage.sh are used to insert data and ddl.sql is used to create tables. At last, crontab is set up to monitor the usage for a specific time interval.
 ## Architecture
-##Scripts
+![Cluster Diagram](./assets/Cluster%20Diagram)
+## Scripts
 ## Database Modeling 
 # Test 
 # Improvements
