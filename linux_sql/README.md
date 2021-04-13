@@ -46,6 +46,21 @@ This script collects the server usage data and is executed repeatedly in a speci
 - crontab::
 Crontab helps to execute the psql_usage.sh script every minute and collect the usage data. 
 ## Database Modeling 
+The database host_agent consists of two tables, host_info to store the hardware specifications and second, host_usage to store resource usage data.
+- `host_info`
+````bash
+id: This is the unique number associated with each node and it is the primary key which is auto incremented by PostgreSQL
+hostname: This is varchar type data and stores the hostname 
+cpu_number: 
+cpu_architecture:
+cpu_model:
+cpu_mhz:
+l2_cache:
+total_mem:
+timestamp: 
+
+``````
+
 # Test 
 # Improvements
 
