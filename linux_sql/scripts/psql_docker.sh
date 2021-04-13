@@ -2,7 +2,6 @@
 
 sudo systemctl status docker || systemctl  docker #start docker demon if it is not running
 exists=$( docker container ls -a -f name="$2" | wc -l ) #check whether container exists. If yes, $exit==2
-echo "$exists"
 if [[ $1 == "start" ]] | [[ $1 == "stop" ]] | [[ $1 == "create" ]]; then
   case $1 in
 

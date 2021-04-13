@@ -72,6 +72,11 @@ disk_available: This is an integer type field which stores the available disk bl
 ``````
 
 # Test 
-# Improvements
+To test the scripts and sql queries, the first step is to connect the psql instance with the help of psqldocker.sh script and change the mode of each file to executable mode. ddl.sql file is executed to create the tables host_info and host_usage if does not exist. host_info.sh and host_info.sh scripts are executed to retrieve the hardware information and resource usage information which is stored in a variable and then the data is inserted through psql CLI tool. Crontab is set up to run the host_usage.sh script every minute to monitor the resource usage. 
+At last, sql queries are executed with the help of dbeaver GUI client to get the average memory usage in percentage for a fixed interval of time and hardware information grouped by cpu hosts.   
 
+# Improvements
+1. Create an automated script to connect to the psql instance 
+2. Handle the hardware update and insert the new hardwware specifications into host_info 
+3. Find a way to use windows function to group hosts by cpu number without use of aggregate functions
 
