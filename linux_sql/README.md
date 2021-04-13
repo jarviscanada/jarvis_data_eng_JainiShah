@@ -26,7 +26,7 @@ crontab -e
 # Implementation
 A postgreSQL instance is provisioned by creating and starting a docker container. The program is implemented using linux command lines and scripts like host_info.sh and host_usage.sh are used to insert data and ddl.sql is used to create tables. At last, crontab is set up to monitor the usage for a specific time interval.
 ## Architecture
-![Cluster Diagram](./assets/Cluster%20Diagram)
+![ClusterDiagram](./assets/ClusterDiagram.jpg)
 ## Scripts
 ## Database Modeling 
 # Test 
