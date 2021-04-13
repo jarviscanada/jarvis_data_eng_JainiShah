@@ -27,3 +27,4 @@ insert_stmnt="INSERT INTO host_usage(timestamp,host_id,memory_free,cpu_idle,cpu_
 #Executing Insert statement through psql CLI tool
 export PGPASSWORD=$5 
 psql -h localhost -U postgres -d host_agent -c "$insert_stmnt"
+exit 0''
