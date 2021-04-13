@@ -28,6 +28,23 @@ A postgreSQL instance is provisioned by creating and starting a docker container
 ## Architecture
 ![ClusterDiagram](./assets/ClusterDiagram.jpg)
 ## Scripts
+- psql_docker.sh::
+  This script creates psql instance with the given database name and password using docker and allows user to access it on the local machine.  
+  ````bash
+    ./scripts/psql_docker.sh start|stop|create (db_username)(db_password)
+    ````
+- host_info.sh::
+This script runs only once assuming hardware data is static and allows user to collect hardware specifications which is then inserted into the database table called host_info(psql instance)
+````bash
+./scripts/host_info.sh psql_host psql_port db_name psql_user psql_password
+````  
+- host_usage.sh::
+This script collects the server usage data and is executed repeatedly in a specific interval of time and then stores data to psql database    
+````bash
+.scripts/host_usage.sh psql_host psql_port db_name psql_user psql_password
+````
+- crontab
+Crontab helps to execute the psql_usage.sh script every minute and collect the usage data. 
 ## Database Modeling 
 # Test 
 # Improvements
