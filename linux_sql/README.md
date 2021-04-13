@@ -49,16 +49,26 @@ Crontab helps to execute the psql_usage.sh script every minute and collect the u
 The database host_agent consists of two tables, host_info to store the hardware specifications and second, host_usage to store resource usage data.
 - `host_info`
 ````bash
+#Schema of host_info table
+#All the values in both table is set to NOT NULL 
 id: This is the unique number associated with each node and it is the primary key which is auto incremented by PostgreSQL
 hostname: This is varchar type data and stores the hostname 
-cpu_number: 
-cpu_architecture:
-cpu_model:
-cpu_mhz:
-l2_cache:
-total_mem:
-timestamp: 
+cpu_number: This is an integer type data which stores the number of cpu of the host
+cpu_architecture: A varchar type data stores the cpu architecture information
+cpu_model: This is an integer type field and stores the model of cpu
+cpu_mhz: This is an integer type field which stores the cpu speed information 
+l2_cache: This is varchar type field which stores the level 2 cache memory of cpu in KB
+total_mem: This is an integer type field which stores the total memory available for cpu in KB  
+timestamp: This is a timestamp type field which stores current timestamp in UTC time zone 
 
+#Schema of host_usage table
+timestamp: This is a timestamp type field which stores current time in UTC time zone
+host_id: This the id of the host corresponding to the id in host_info table. It is the foreign key.
+memory_free: This is an integer type field which stores total free memory of the disk in MB
+cpu_idle: This is an integer type field which stores the percentage of cpu idle
+cpu_kernel: This is an integer type field which stores the percentage of CPU time spent on kernel processes. 
+disk_io: This is an integer type field which stores total current disk reads or writes.
+disk_available: This is an integer type field which stores the available disk blocks in MB
 ``````
 
 # Test 
