@@ -3,8 +3,7 @@ arg1=$1
 arg2=$2
 arg3=$3
 sudo systemctl status docker || systemctl  docker #start docker demon if it is not running
-exists=$( docker container ls -a -f name="$2" | wc -l ) #check whether container exists. If yes, $exit==2
-echo "$exists"
+exists=$( docker container ls -a -f name="$arg2" | wc -l ) #check whether container exists. If yes, $exists==2
 if [[ $arg1 == "start" ]] | [[ $arg1 == "stop" ]] | [[ $arg1 == "create" ]]; then
   case $arg1 in
 
