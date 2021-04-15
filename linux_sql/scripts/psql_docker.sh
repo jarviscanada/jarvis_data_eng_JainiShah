@@ -45,5 +45,5 @@ if [[ $arg1 == "start" ]] | [[ $arg1 == "stop" ]] | [[ $arg1 == "create" ]]; the
 else
   echo please enter valid options from start, stop or create with username nd password
 fi
-exit 0''
+exit 0
 
