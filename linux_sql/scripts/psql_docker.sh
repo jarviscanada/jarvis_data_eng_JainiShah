@@ -2,7 +2,7 @@
 dockerComand=$1
 containerName=$2
 sudo systemctl status docker || systemctl  docker #start docker demon if it is not running
-exists=$( docker container ls -a -f name="$arg2" | wc -l ) #check whether container exists. If yes, $exists==2
+exists=$( docker container ls -a -f name="$containerName" | wc -l ) #check whether container exists. If yes, $exists==2
 if [[ $dockerComand == "start" ]] | [[ $dockerComand == "stop" ]] | [[ $dockerComand == "create" ]]; then
   case $dockerComand in
 
