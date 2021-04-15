@@ -1,15 +1,14 @@
 #!/bin/bash
-arg1=$1
-arg2=$2
-arg3=$3
+dockerComand=$1
+containerName=$2
 sudo systemctl status docker || systemctl  docker #start docker demon if it is not running
 exists=$( docker container ls -a -f name="$arg2" | wc -l ) #check whether container exists. If yes, $exists==2
-if [[ $arg1 == "start" ]] | [[ $arg1 == "stop" ]] | [[ $arg1 == "create" ]]; then
-  case $arg1 in
+if [[ $dockerComand == "start" ]] | [[ $dockerComand == "stop" ]] | [[ $dockerComand == "create" ]]; then
+  case $dockerComand in
 
   start) #start the container and print error message if not created
     if [[ "$exists" == 2 ]]; then
-      docker start "$arg2"
+      docker start "$containerName"
     else
       echo sorry, cannot start the specified container as it is not created
     fi
@@ -18,7 +17,7 @@ if [[ $arg1 == "start" ]] | [[ $arg1 == "stop" ]] | [[ $arg1 == "create" ]]; the
 
   stop) #stop the container and print error message if it is not created
     if [[ "$exists" == 2 ]]; then
-      docker stop "$arg2"
+      docker stop "$containerName"
     else
       echo sorry, cannot stop the container as it is not created
     fi
@@ -26,14 +25,16 @@ if [[ $arg1 == "start" ]] | [[ $arg1 == "stop" ]] | [[ $arg1 == "create" ]]; the
   ;;
 
   create)
+    userName=$2
+    password=$3
     if [[ "$exists" == 2 ]]; then #if the container already exists
       echo The container already exists!
       echo usage:
-      docker stats "arg2"
+      docker stats "$containerName"
     else
-      if [ "$arg2" != '' ] && [ "$arg3" != '' ]; then #creates psql container with the given username and password
+      if [ "$userName" != '' ] && [ "$password" != '' ]; then #creates psql container with the given username and password
         docker volume create pgdata
-        docker run --name="$arg2" -e POSTGRES_PASSWORD="$arg3" -d -v pgdata:/var/lib/postgresql/data -p 5432:5432 postgrese
+        docker run --name="$userName" -e POSTGRES_PASSWORD="$password" -d -v pgdata:/var/lib/postgresql/data -p 5432:5432 postgrese
       else #gives error message if username and password is missing
         echo please provide username and password
       fi
