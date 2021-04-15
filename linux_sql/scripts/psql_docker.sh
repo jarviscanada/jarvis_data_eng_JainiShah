@@ -43,5 +43,5 @@ if [[ $1 == "start" ]] | [[ $1 == "stop" ]] | [[ $1 == "create" ]]; then
 else
   echo please enter valid options from start, stop or create with username nd password
 fi
-exit 0''
+exit 0
 
