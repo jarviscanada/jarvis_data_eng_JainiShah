@@ -17,7 +17,7 @@ public interface JavaGrep {
    * @param rootDir
    * @return
    */
-  List<File> listfiles(String rootDir);
+  List<File> listFiles(String rootDir);
 
   /**
    * Read a file and return all the lines
