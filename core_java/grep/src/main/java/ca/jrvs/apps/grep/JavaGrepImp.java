@@ -17,7 +17,7 @@ public class JavaGrepImp implements JavaGrep {
 
   final Logger logger = LoggerFactory.getLogger(JavaGrep.class);
 
-  @Override
+ @Override
   public String getRegex() {
     return regex;
   }
@@ -34,18 +34,18 @@ public class JavaGrepImp implements JavaGrep {
   @Override
   public void process() throws IOException {
     List<String> matchedLines = new ArrayList<>();
-    List<File> files = this.listFiles(this.rootPath);
+    List<File> files = listFiles(getRootPath());
 
     for(File file: files){
-      List<String> lines = this.readlines(file);
+      List<String> lines = readlines(file);
 
       for(String line: lines){
-        if(this.containsPattern(line)){
+        if(containsPattern(line)){
           matchedLines.add(line);
         }
       }
     }
-    this.writeToFile(matchedLines);
+    writeToFile(matchedLines);
   }
 
   @Override
@@ -93,15 +93,12 @@ public class JavaGrepImp implements JavaGrep {
 
   @Override
   public boolean containsPattern(String line) {
-    boolean match = false;
-    if(line.matches(this.regex))
-      match = true;
-    return match;
+    return line.matches(getRegex());
   }
 
   @Override
   public void writeToFile(List<String> lines) throws IOException {
-    BufferedWriter writer = new BufferedWriter(new FileWriter(this.outFile));
+    BufferedWriter writer = new BufferedWriter(new FileWriter(getOutFile()));
 
     for(String matchedLine: lines){
       writer.write(matchedLine + System.lineSeparator());
