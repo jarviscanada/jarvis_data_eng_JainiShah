@@ -10,12 +10,14 @@ Java -jar grep-1.0-SNAPSHOT.jar ${Regex_pattern} source_file out_file
 
 #Implementation
 ##Pseudo code
+````Pseudo Code
 matchedLines = []
 for file in listFilesRecursively(rootDir)
 for line in readLines(file)
 if containsPattern(line)
 matchedLines.add(line)
 writeToFile(matchedLines)
+````
 ##Performance Issue
 The program initially loads all the file from a root directory and recursively finds the source file. Here, shakesphere.txt file is used which is of more than 5MB in size. So, when the JVM was loaded with less than 5MB memory (java -Xm5m -Xm5m -cp target/grep-1.0-SNAPSHOT.jar ca.jrvs.apps.grep.JavaGrepImp \
 .*Romeo.*Juliet.* ./data ./out/grep.txt ) an OutofMemoryError exception is thrown. 
@@ -25,4 +27,6 @@ To test the application manually, a source file shakesphere.txt is passed as one
 #Deployment
 The grep app is dockerize so that users can consume it easily. Maven shade plugin is added in pom.xml and with maven package command uber jar file including all the dependencies is generated. A docker file is created and this uber jar file is copied to newly build local docker image. A docker container runs and executes the grep app. Lastly, docker image is pushed to docker hub. 
 #Improvement
-- Use the source file in any format - txt,docx,pdf 
+- Use the source file in any format and not only txt - txt,docx,pdf 
+- Allocate more heap size when jvm is loaded to handle large files
+- Include more than one source file 
