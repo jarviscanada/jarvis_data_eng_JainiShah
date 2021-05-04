@@ -137,7 +137,7 @@ public class JavaGrepImp implements JavaGrep {
     javaGrepImp.setRegex(args[0]);
     javaGrepImp.setRootPath(args[1]);
     javaGrepImp.setOutFile(args[2]);
-    //System.out.println(javaGrepImp.getOutFile());
+
     try {
       javaGrepImp.process();
     } catch (Exception ex){
