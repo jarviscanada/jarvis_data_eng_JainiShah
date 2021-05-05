@@ -1,4 +1,4 @@
-package com.frankmoley.lil.jdbc;
+package ca.jrvs.apps.jdbc;
 
 
 import java.math.BigDecimal;

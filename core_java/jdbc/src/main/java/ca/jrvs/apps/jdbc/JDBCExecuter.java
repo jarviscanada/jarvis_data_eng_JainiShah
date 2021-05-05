@@ -11,14 +11,16 @@ public class JDBCExecuter {
   final Logger logger = LoggerFactory.getLogger(JDBCExecuter.class);
   public static void main(String[] args) {
     JDBCExecuter jdbcExecuter = new JDBCExecuter();
-    DatabaseConnectionManager dcm = new DatabaseConnectionManager("localhost", "postgres", "postgres", "password");
+    DatabaseConnectionManager dcm = new DatabaseConnectionManager("localhost", "hplussport", "postgres", "password");
 
     try{
       Connection connection = dcm.getConnection();
-      Statement statement = connection.createStatement();
-      ResultSet resultSet = statement.executeQuery("SELECT COUNT(*) FROM CUSTOMER");
-      while(resultSet.next()){
-        System.out.println(resultSet.getInt(1));
+      CustomerDAO customerDAO = new CustomerDAO(connection);
+      customerDAO.findAllSorted(20).forEach(System.out::println);
+      System.out.println("Paged");
+      for(int i=1;i<3;i++){
+        System.out.println("Page number: " + i);
+        customerDAO.findAllPaged(10, i).forEach(System.out::println);
       }
     } catch (SQLException e){
         jdbcExecuter.logger.error(e.getMessage(), e);
