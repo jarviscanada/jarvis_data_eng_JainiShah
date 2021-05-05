@@ -11,7 +11,7 @@ public class JDBCExecuter {
   final Logger logger = LoggerFactory.getLogger(JDBCExecuter.class);
   public static void main(String[] args) {
     JDBCExecuter jdbcExecuter = new JDBCExecuter();
-    DatabaseConnectionManager dcm = new DatabaseConnectionManager("localhost", "hplussport", "postgres", "password");
+    DatabaseConnectionManager dcm = new DatabaseConnectionManager("localhost", "postgres", "postgres", "password");
 
     try{
       Connection connection = dcm.getConnection();
