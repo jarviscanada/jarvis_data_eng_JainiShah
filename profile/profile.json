@@ -15,28 +15,27 @@
       "school_name": "Gujarat Technological University"
     }
   ],
-  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_JainiShah",
+  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_demo",
   "highlighted_projects": [
     {
-      "description": "Developed a web application to manage huge healthcare data across organizations using Springboot which reduced development time and increased efficiency of the applicaiton. Git helped for version control and Eclipse IDE for developing the site.",
+      "description": "Developed a web application to manage huge healthcare data across organizations using Springboot which reduced development time and increased efficiency of the application. Git helped for version control and Eclipse IDE for developing the site.",
       "git_url": "",
       "name": "Electronic Health Record"
     },
     {
       "description": "Designed and developed a web application to bridge the gap between job seekers and employers using MEAN stack which helped in rapid method calls and stack implementation and reduced website loading time because of Node Js.",
-      "git_url": "",
+      "git_url": null,
       "name": "Employee InterLinker"
     }
   ],
   "jarvis_projects": [
     {
-      "description": "Implemented a Cluster Monitoring Agent using Bash to collect the hardware specifications of each node in a cluster and monitor resosurce usages every minute with the help of Crontab.The data is collected and stored to a PostgreSQL server which runs inside a docker container.",
+      "description": "Implemented a Cluster Monitoring Agent on a remote CentOS remote machine. Executeda bash script to collect the hardware specifications of each node in a cluster and monitor resosurceusages every minute with the help of Crontab.The data is collected and stored to a PostgreSQL serverwhich runs inside a docker container.",
       "git_url": "/linux_sql",
       "name": "Linux Cluster Monitor"
     },
     {
       "description": [
-        "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.",
         "JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.",
         "Grep App: Implemented a JavaGrep interface to perform function same as grep command in linux. The program was written with the help of IntelliJ which searches pattern recursively in a given directory and stores the matched lines to output file. For the efficient search through the directories and files, stream and lambda expression is used and slf4j to log messages. The Java grep app was packaged using maven and dockerized so that users can easily consume it."
       ],
@@ -73,16 +72,10 @@
   "others": [
     {
       "bullets": [
-        "Udemy Programming with Python: For beginners (April 2020)",
-        "Udemy Machine learning basics (April 2020)"
+        "Udemy Programming with python: For biginners (April 2020)",
+        "Udemy Machine Learning Basics (April 2020) "
       ],
       "title": "Certificates"
-    },
-    {
-      "bullets": [
-        "Winner"
-      ],
-      "title": "Awards"
     },
     {
       "bullets": [
@@ -95,37 +88,31 @@
   "professional_experience": [
     {
       "company": "Jarvis",
-      "description": "Developed, analyzed and modified programming systems, including encoding, unit testing and debuggin. Worked with a diverse array of large data sets and large scale data platforms. Followed agile methodologies and gitflow to develope java applicaitons that run in docker containers. Contributed to code-review sessions and ensured that code quality aligns with business and project requirements.",
-      "duration": "Mar 2021-present",
+      "description": "Developed, analyzed and modified programming systems, including encoding, unit testing and debugging. Worked with a diverse array of large data sets and large scale data platforms. Followed agile methodologies and gitflow to develop java applications that run in docker containers. Contributed to code-review sessions and ensured that code quality aligns with business and project requirements.",
+      "duration": "Mar 2021 - present",
       "title": "Data Engineer"
     },
     {
       "company": "Mosaic North America",
       "description": "Gathered business requirements from the client, built and maintained business relationships. Analyzed information and configured ecommerce platform for building websites. Collaborated with the team and achieved success beyond the decided milestone.",
       "duration": "Sep 2020 - Dec 2020",
-      "title": "ECommerce Coordinator"
-    },
-    {
-      "company": "Elecon Group of Industries",
-      "description": "Translated client requirements into applicaiton designs. Followed agile methodology to collaborate with the team and developed website for a courier service where agencies register themselves and provide online post service. Executed SQL queries to handle data and retrieve meaningful informaiton.",
-      "duration": "Sep 2018 - May 2019",
-      "title": "Junior Web Developer"
+      "title": "Ecommerce Coordinator"
     }
   ],
   "skills": {
     "competent": [
+      "C/C++",
+      "HTML/CSS",
       "Docker",
-      "Springboot",
-      "Hadoop",
-      "Spark/Scala",
+      "PSQL",
       "Google Cloud Platform"
     ],
     "familiar": [
-      "C/C++",
+      "Springboot",
+      "Hadoop",
+      "Spark/Scala",
       "JavaScript",
-      "React JS",
-      "HTML",
-      "CSS"
+      "React JS"
     ],
     "proficient": [
       "Java",
@@ -135,5 +122,5 @@
       "Git"
     ]
   },
-  "summary": "A passionate learner, detail-oriented, responsible and committed engineer graduated with a Masters of Applied Computing degree from University of Windsor. Having experience and understanding of agile scrum methodology, willing to work beyond the comfort zone to achieve milestones.In addition, a skilled java developer with knowledge of  developing java applications and managing RDBMS operations, aim to apply skills in dynamic business environment to find innovative solutions for complex problems."
+  "summary": "A passionate learner, detail-oriented, responsible and committed engineer graduated wit    h a Masters of Applied Computing degree from University of Windsor. Having experience and unders    tanding of agile scrum methodology, willing to work beyond the comfort zone to achieve milestone    s.In addition, a skilled java developer with knowledge of  developing java applications and mana    ging RDBMS operations, aim to apply skills in dynamic business environment to find innovative so    lutions for complex problems."
 }
