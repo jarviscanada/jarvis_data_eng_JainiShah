@@ -25,7 +25,7 @@ public class JavaGrepLambdaImp extends JavaGrepImp{
     try {
       javaGrepLambdaImp.process();
     } catch (Exception ex) {
-      javaGrepLambdaImp.logger.error(ex.getMessage(), ex);
+      javaGrepLambdaImp.logger.error("Please provide valid regex pattern, rootPath and outFile", ex);
     }
   }
 
@@ -56,7 +56,7 @@ public class JavaGrepLambdaImp extends JavaGrepImp{
       Stream<String> linesStream = Files.lines(inputFile.toPath());
       linesStream.forEach(line -> fileLines.addAll(Collections.singleton(line)));
     }catch (IOException ex) {
-      logger.error(ex.getMessage(), ex);
+      logger.error("Please provide valid argument", ex);
     }
     return fileLines;
   }

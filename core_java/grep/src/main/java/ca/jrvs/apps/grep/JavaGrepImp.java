@@ -86,7 +86,7 @@ public class JavaGrepImp implements JavaGrep {
       }
       reader.close();
     } catch (Exception e) {
-      logger.error(e.getMessage(), e);
+      logger.error("please provide valid input file", e);
     }
     return fileLines;
   }
@@ -141,7 +141,7 @@ public class JavaGrepImp implements JavaGrep {
     try {
       javaGrepImp.process();
     } catch (Exception ex){
-      javaGrepImp.logger.error(ex.getMessage(), ex);
+      javaGrepImp.logger.error("Please provide valid arguments", ex);
     }
   }
 }
