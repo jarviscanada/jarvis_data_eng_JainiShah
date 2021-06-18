@@ -8,7 +8,7 @@ A passionate learner, detail-oriented, responsible and committed engineer gradua
 
 **Competent:** C/C++, HTML/CSS, Docker, PSQL, Google Cloud Platform
 
-**Familiar:** Springboot, Hadoop, Spark/Scala, JavaScript, React JS
+**Familiar:** Hadoop, Sparl/Scala, Springboot, JavaScript, React JS
 
 ## Jarvis Projects
 
@@ -22,15 +22,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_demo](http
   - JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
   - Grep App: Implemented a JavaGrep interface to perform function same as grep command in linux. The program was written with the help of IntelliJ which searches pattern recursively in a given directory and stores the matched lines to output file. For the efficient search through the directories and files, stream and lambda expression is used and slf4j to log messages. The Java grep app was packaged using maven and dockerized so that users can easily consume it.
 
-**Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/springboot)]: Not Started
-
-**Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/python_data_anlytics)]: Not Started
-
-**Hadoop** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/hadoop)]: Not Started
-
-**Spark** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/spark)]: Not Started
-
-**Cloud/DevOps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/cloud_devops)]: Not Started
+**Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/python_data_anlytics)]: Analyzed a company's transactional data, their customer's shopping behaviour and determined how the business can go about in designing thier marketing strategies. Python was used as the main language for analyzing data along with its libraries such as Pandas, Numpy, Matplotlib and SQLAlchemy. The work was done in Jupyter notebook and data was accessed from given CSV file or postgres database, which came from company's data warehouse. The notebookruns from a Jupyter server and results consisted of various plots describing monthly sales, orders placed, customer counts and most importantly Recency, Frequency and Monetary segmentation of customers.
 
 
 ## Highlighted Projects
