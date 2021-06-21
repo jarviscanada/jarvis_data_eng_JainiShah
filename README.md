@@ -6,7 +6,7 @@ A passionate learner, detail-oriented, responsible and committed engineer gradua
 
 **Proficient:** Python, RDBMS/SQL, Java, Agile/Scrum, Git
 
-**Competent:** C/C++, Docker, PSQL, Google CLoud PLatform, HTML/CSS
+**Competent:** C/C++, Docker, PSQL, Google Cloud Platform, HTML/CSS
 
 **Familiar:** Hadoop, Spark/Scala, Springboot, JavaScript, React JS
 
@@ -15,14 +15,14 @@ A passionate learner, detail-oriented, responsible and committed engineer gradua
 Project source code: [https://github.com/jarviscanada/jarvis_data_eng_JainiShah](https://github.com/jarviscanada/jarvis_data_eng_JainiShah)
 
 
-**Linux Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JainiShah/tree/master/linux_sql)]: Implemented a Cluster Monitoring Agent on a remote CentOS remote machine. Executeda bash script to collect the hardware specifications of each node in a cluster and monitor resosurceusages every minute with the help of Crontab.The data is collected and stored to a PostgreSQL serverwhich runs inside a docker container.
+**Linux Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JainiShah/tree/master/linux_sql)]: Implemented a Cluster Monitoring Agent on a remote CentOS  machine. Executed a bash script to collect the hardware specifications of each node in a cluster and monitor resosurce usages every minute with the help of Crontab. The data is collected and stored to a PostgreSQL server which runs inside a docker container.
 
 **Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JainiShah/tree/master/core_java)]:
       
   - JDBC App: The JDBC application allows the data retrieval from a retail database for the customers and their orders using Java from RDBMS through JDBC. The application implements the CRUD(Create Read Update Delete) operations using Data Transfer Objects and Data Access Objects. The psql instnace was provisioned using docker container and the dependencies were managed through Maven.
-  - Grep App: Implemented a JavaGrep interface to perform function same as grep command in linux. The program was written with the help of IntelliJ which searches pattern recursively in a given directory and stores the matched lines to output file. For the efficient search through the directories and files, stream and lambda expression is used and slf4j to log messages. The Java grep app was packaged using maven and dockerized so that users can easily consume it.
+  - Grep App: Implemented a JavaGrep interface to function same as grep command in linux. The program was written with the help of IntelliJ which searches pattern recursively in a given directory and stores the matched lines to output file. For the efficient search through the directories and files, stream and lambda expression is used and slf4j to log messages. The Java grep app was packaged using maven and dockerized so that users can easily consume it.
 
-**Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JainiShah/tree/master/python_data_anlytics)]: Analyzed a company's transactional data, their customer's shopping behaviour and determined how the business can go about in designing thier marketing strategies. Python was used as the main language for analyzing data along with its libraries such as Pandas, Numpy, Matplotlib and SQLAlchemy. The work was done in Jupyter notebook and data was accessed from given CSV file or postgres database, which came from company's data warehouse. The notebookruns from a Jupyter server and results consisted of various plots describing monthly sales, orders placed, customer counts and most importantly Recency, Frequency and Monetary segmentation of customers.
+**Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JainiShah/tree/master/python_data_anlytics)]: Analysed a company's transactional data, their customer's shopping behaviour and determined how the business can go about in designing thier marketing strategies. Python was used as the main language for analyzing data along with its libraries such as Pandas, Numpy, Matplotlib and SQLAlchemy. The work was done in Jupyter notebook and data was accessed from given CSV file or postgres database, which came from company's data warehouse. The notebook runs from a Jupyter server and results consisted of various plots describing monthly sales, orders placed, customer counts and most importantly Recency, Frequency and Monetary segmentation of customers.
 
 
 ## Highlighted Projects
