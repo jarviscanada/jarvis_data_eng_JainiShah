@@ -8,7 +8,7 @@ To improve a business's operations, I was assigned to look into the company's tr
 
 ### Project Architecture
 
-<!-- ![Architecture](./assets/Python_Project_Architecture.png)-->
+![Architecture](./assets/Project_Architecture.png)
 
 The overall architecture begins with the users visiting the company's web application, which consists of both the front-end and the back-end. After the users have made their transactions through the front-end, it gets recorded into the company's database using their back-end application. Then a script or CSV is constructed from this database so that the data gets imported into the company's data warehouse, which is running from a Docker container.
 
