@@ -1,11 +1,11 @@
 # Preferred name (Characters only)
 name: "Jaini Shah"
 # Your GitHub repo root URL
-github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_demo
+github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_JainiShah
 
 # Introduce yourself, your academic and professional background.
 # What excites you about the software industry and your passion. At least 80 words
-summary: A passionate learner, detail-oriented, responsible and committed engineer graduated wit    h a Masters of Applied Computing degree from University of Windsor. Having experience and unders    tanding of agile scrum methodology, willing to work beyond the comfort zone to achieve milestone    s.In addition, a skilled java developer with knowledge of  developing java applications and mana    ging RDBMS operations, aim to apply skills in dynamic business environment to find innovative so    lutions for complex problems. 
+summary: A passionate learner, detail-oriented, responsible and committed engineer graduated with a Masters of Applied Computing degree from University of Windsor. Having experience and understanding of agile scrum methodology, willing to work beyond the comfort zone to achieve milestones. In addition, with the knowledge of RDBMS, SQL, Data modelling and Java, developed various applications following Software Development Life Cycle (SDLC) and enhanced analytical, strategic planning and communicaiton skills as a Data Engineer at Jarvis. With a keen interest to transform business needs into requirements aim to apply the skills in dynamic business environment to find innovative solutions for complex problems.   
 
 # Group your skills by level.
 # Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
@@ -13,8 +13,9 @@ skills:
   # At least 5 skills
   proficient:
     - Java
-    - Linux/Bash
+    - Python
     - RDBMS/SQL
+    - Linux/Bash scripts
     - Agile/Scrum
     - Git
   # At least 5 skills
@@ -27,7 +28,7 @@ skills:
   # At least 5 skills
   familiar:
     - Hadoop
-    - Sparl/Scala
+    - Spark/Scala
     - Springboot
     - JavaScript
     - React JS
@@ -44,7 +45,7 @@ jarvis_projects:
     git_url: "/core_java"
     description:
       #Keywords: Java 8, REST API, OAuth, MVC, JUnit, Mockito, Docker, Intellij
-      - "JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
+      - "JDBC App: The JDBC applicaiton allows the data retrieval from a retail database for customers and orders using Java from RDBMS through JDBC. The application implements the CRUD (Create Read Update Delete) operations using Data Transfer Objects and Data Access Objects. The psql instance was provisioned using docker container and the dependencies were managed through Maven."
       - "Grep App: Implemented a JavaGrep interface to perform function same as grep command in linux. The program was written with the help of IntelliJ which searches pattern recursively in a given directory and stores the matched lines to output file. For the efficient search through the directories and files, stream and lambda expression is used and slf4j to log messages. The Java grep app was packaged using maven and dockerized so that users can easily consume it."
   #- name: "Springboot App"
    # git_url: "/springboot"
@@ -83,7 +84,7 @@ professional_experience:
   #Write your Jarvis role as a professional experience rather than training.
   - title: "Data Engineer"
     company: "Jarvis"
-    duration: "Mar 2021 - present"
+    duration: "Mar 2021 - Present"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
     description: "Developed, analyzed and modified programming systems, including encoding, unit testing and debugging. Worked with a diverse array of large data sets and large scale data platforms. Followed agile methodologies and gitflow to develop java applications that run in docker containers. Contributed to code-review sessions and ensured that code quality aligns with business and project requirements."
   - title: "Ecommerce Coordinator"
