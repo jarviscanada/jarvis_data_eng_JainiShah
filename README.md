@@ -1,64 +1,54 @@
 # Jaini Shah . Jarvis Consulting
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis a orci ac malesuada. Vivamus ligula elit, viverra eu ante porttitor, blandit convallis augue. Aliquam justo justo, mollis at lacus eu, rutrum finibus est. Vestibulum venenatis purus id accumsan pretium. In efficitur magna nec enim laoreet tincidunt. Ut libero metus, scelerisque nec eros vitae, sagittis pellentesque enim. Donec dictum felis volutpat, vehicula magna eu, imperdiet elit. Phasellus ut velit a massa efficitur faucibus. Sed volutpat, lacus sed sagittis luctus, elit.
+
+A passionate learner, detail-oriented, responsible and committed engineer graduated with a Masters of Applied Computing degree from University of Windsor. Having experience and understanding of agile scrum methodology, willing to work beyond the comfort zone to achieve milestones and aim to apply the skills in dynamic business environment to find innovative solutions for complex problems.
 
 ## Skills
 
-**Proficient:** Java, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git
+**Proficient:** Python, RDBMS/SQL, Java, Agile/Scrum, Git
 
-**Competent:** Donec, fermentum, Donec, fermentum, Donec
+**Competent:** C/C++, Docker, PSQL, Google Cloud Platform, HTML/CSS
 
-**Familiar:** Donec, fermentum, fermentum, fermentum, fermentum
+**Familiar:** Hadoop, Spark/Scala, Springboot, JavaScript, React JS
 
 ## Jarvis Projects
 
-Project source code: [https://github.com/jarviscanada/jarvis_data_eng_demo](https://github.com/jarviscanada/jarvis_data_eng_demo)
+Project source code: [https://github.com/jarviscanada/jarvis_data_eng_JainiShah](https://github.com/jarviscanada/jarvis_data_eng_JainiShah)
 
 
-**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/linux_sql)]: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+**Linux Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JainiShah/tree/master/linux_sql)]: Implemented a Cluster Monitoring Agent on a remote CentOS  machine. Executed a bash script to collect the hardware specifications of each node in a cluster and monitor resosurce usages every minute with the help of Crontab. The data is collected and stored to a PostgreSQL server which runs inside a docker container.
 
-**Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/core_java)]:
+**Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JainiShah/tree/master/core_java)]:
       
-  - Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
+  - JDBC App: The JDBC application allows the data retrieval from a retail database for the customers and their orders using Java from RDBMS through JDBC. The application implements the CRUD(Create Read Update Delete) operations using Data Transfer Objects and Data Access Objects. The psql instnace was provisioned using docker container and the dependencies were managed through Maven.
+  - Grep App: Implemented a JavaGrep interface to function same as grep command in linux. The program was written with the help of IntelliJ which searches pattern recursively in a given directory and stores the matched lines to output file. For the efficient search through the directories and files, stream and lambda expression is used and slf4j to log messages. The Java grep app was packaged using maven and dockerized so that users can easily consume it.
 
-**Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/springboot)]: Not Started
-
-**Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/python_data_anlytics)]: Not Started
-
-**Hadoop** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/hadoop)]: Not Started
-
-**Spark** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/spark)]: Not Started
-
-**Cloud/DevOps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/cloud_devops)]: Not Started
+**Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JainiShah/tree/master/python_data_anlytics)]: Analysed a company's transactional data, their customer's shopping behaviour and determined how the business can go about in designing thier marketing strategies. Python was used as the main language for analyzing data along with its libraries such as Pandas, Numpy, Matplotlib and SQLAlchemy. The work was done in Jupyter notebook and data was accessed from given CSV file or postgres database, which came from company's data warehouse. The notebook runs from a Jupyter server and results consisted of various plots describing monthly sales, orders placed, customer counts and most importantly Recency, Frequency and Monetary segmentation of customers.
 
 
 ## Highlighted Projects
-**Web app for resturant** [[GitHub](https://github.com/jarviscanada/jarvis_profile_builder)]: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+**Electronic Health Record**: Developed a web application to manage huge healthcare data across organizations using Springboot which reduced development time and increased efficiency of the application. Git helped for version control and Eclipse IDE for developing the site.
 
-**Machine Learning**: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+**Employee InterLinker**: Designed and developed a web application to bridge the gap between job seekers and employers using MEAN stack which helped in rapid method calls and stack implementation and reduced website loading time because of Node Js.
+
 
 
 ## Professional Experiences
 
-**Software Developer, Jarvis (2020-present)**: Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.
+**Data Engineer, Jarvis (Mar 2021 - present)**: Developed, analyzed and modified programming systems, including encoding, unit testing and debugging. Worked with a diverse array of large data sets and large scale data platforms. Followed agile methodologies and gitflow to develop java applications that run in docker containers. Contributed to code-review sessions and ensured that code quality aligns with business and project requirements.
 
-**Tutor, XYZ Company (2019)**: Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.
+**Ecommerce Coordinator, Mosaic North America (Sep 2020 - Dec 2020)**: Gathered business requirements from the client, built and maintained business relationships. Analyzed information and configured ecommerce platform for building websites. Collaborated with the team and achieved success beyond the decided milestone.
 
 
 ## Education
-**XYZ university (2012-2016)**, Bachelor of Applied Sciences, Electrical and Computer Engineering
-- Scholarship
-- Dean's List (2015, 2016): Ut enim ad minim veniam
-- GPA: 3.8/4.0
+**University of Windsor (Sep 2019 - Dec 2020)**, Master of Applied Computing, Computer Science
 
-**XYZ university (2016-2018)**, Master of Engineering, Electrical and Computer Engineering
+**Gujarat Technological University (Sep 2015 - May 2019)**, Bachelor of Engineering, Information Technology
 
 
 ## Miscellaneous
-- Udacity Machine Learning (2019)
-- Winner
-- Basketball player
-- Competitive gaming
-- Volunteer, ABC Food bank: Ut enim ad minim veniam
+- Udemy Programming with python: For biginners (April 2020)
+- Udemy Machine Learning Basics (April 2020) 
+- Indian Classical Dancer
+- Basketball Player
+
