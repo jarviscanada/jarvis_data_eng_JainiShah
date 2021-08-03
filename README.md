@@ -1,5 +1,6 @@
 # Jaini Shah . Jarvis Consulting
 
+
 A passionate learner, detail-oriented, responsible and committed engineer graduated with a Masters of Applied Computing degree from University of Windsor. Having experience and understanding of agile scrum methodology, willing to work beyond the comfort zone to achieve milestones and aim to apply the skills in dynamic business environment to find innovative solutions for complex problems.
 
 ## Skills
@@ -31,6 +32,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_JainiShah]
 **Employee InterLinker**: Designed and developed a web application to bridge the gap between job seekers and employers using MEAN stack which helped in rapid method calls and stack implementation and reduced website loading time because of Node Js.
 
 
+
 ## Professional Experiences
 
 **Data Engineer, Jarvis (Mar 2021 - present)**: Developed, analyzed and modified programming systems, including encoding, unit testing and debugging. Worked with a diverse array of large data sets and large scale data platforms. Followed agile methodologies and gitflow to develop java applications that run in docker containers. Contributed to code-review sessions and ensured that code quality aligns with business and project requirements.
@@ -49,3 +51,4 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_JainiShah]
 - Udemy Machine Learning Basics (April 2020) 
 - Indian Classical Dancer
 - Basketball Player
+
