@@ -18,7 +18,7 @@
   "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_JainiShah",
   "highlighted_projects": [
     {
-      "description": "Developed a web application to manage huge healthcare data across organizations using Springboot which reduced development time and increased efficiency of the application. Git helped for version control and Eclipse IDE for developing the site.",
+      "description": "Developed a web application to manage huge healthcare data across organizations using Springboot which reduced development time and increased efficiency of the application. Git helped with version control and Eclipse IDE for developing the site.",
       "git_url": "",
       "name": "Electronic Health Record"
     },
@@ -30,20 +30,20 @@
   ],
   "jarvis_projects": [
     {
-      "description": "Implemented a Cluster Monitoring Agent on a remote CentOS remote machine. Executeda bash script to collect the hardware specifications of each node in a cluster and monitor resosurceusages every minute with the help of Crontab.The data is collected and stored to a PostgreSQL serverwhich runs inside a docker container.",
+      "description": "Implemented a Cluster Monitoring Agent on a remote CentOS machine. Executed a bash script to collect the hardware specifications of each node in a cluster and monitor resource usages every minute with the help of Crontab. The data is collected and stored in a PostgreSQL server that runs inside a docker container.",
       "git_url": "/linux_sql",
       "name": "Linux Cluster Monitor"
     },
     {
       "description": [
-        "JDBC App: The JDBC applicaiton allows the data retrieval from a retail database for customers and orders using Java from RDBMS through JDBC. The application implements the CRUD (Create Read Update Delete) operations using Data Transfer Objects and Data Access Objects. The psql instance was provisioned using docker container and the dependencies were managed through Maven.",
-        "Grep App: Implemented a JavaGrep interface to perform function same as grep command in linux. The program was written with the help of IntelliJ which searches pattern recursively in a given directory and stores the matched lines to output file. For the efficient search through the directories and files, stream and lambda expression is used and slf4j to log messages. The Java grep app was packaged using maven and dockerized so that users can easily consume it."
+        "JDBC App: The JDBC application allows the data retrieval from a retail database for customers and orders using Java from RDBMS through JDBC. The application implements the CRUD (Create Read Update Delete) operations using Data Transfer Objects and Data Access Objects. The psql instance was provisioned using the docker container and the dependencies were managed through Maven.",
+        "Grep App: Implemented a JavaGrep interface to perform functions the same as the grep command in Linux. The program was written with the help of IntelliJ and searches patterns recursively in a given directory that stores the matched lines to an output file. Stream and lambda expressions were used for the efficient search through the directories and files. slf4j was used to log messages. The Java grep app was packaged using maven and dockerized so that users can easily consume it."
       ],
       "git_url": "/core_java",
       "name": "Core Java Apps"
     },
     {
-      "description": "Analyzed a company's transactional data, their customer's shopping behaviour and determined how the business can go about in designing thier marketing strategies. Python was used as the main language for analyzing data along with its libraries such as Pandas, Numpy, Matplotlib and SQLAlchemy. The work was done in Jupyter notebook and data was accessed from given CSV file or postgres database, which came from company's data warehouse. The notebookruns from a Jupyter server and results consisted of various plots describing monthly sales, orders placed, customer counts and most importantly Recency, Frequency and Monetary segmentation of customers.",
+      "description": "Analyzed a company's transactional data, their customer's shopping behavior and determined how the business can go about in designing their marketing strategies. Python was used as the main language for analyzing data along with its libraries such as Pandas, Numpy, Matplotlib, and SQLAlchemy. The work was done in Jupyter notebook and data was accessed from the given CSV file or Postgres database, which came from the company's data warehouse. The notebook runs from a Jupyter server and results consisted of various plots describing monthly sales, orders placed, customer counts, and most importantly Recency, Frequency, and Monetary segmentation of customers.",
       "git_url": "/python_data_anlytics",
       "name": "Python Data Analytics"
     }
@@ -52,8 +52,7 @@
   "others": [
     {
       "bullets": [
-        "Udemy Programming with python: For biginners (April 2020)",
-        "Udemy Machine Learning Basics (April 2020) "
+        "Udemy Programming with python: For biginners (April 2020)"
       ],
       "title": "Certificates"
     },
@@ -68,13 +67,13 @@
   "professional_experience": [
     {
       "company": "Jarvis",
-      "description": "Developed, analyzed and modified programming systems, including encoding, unit testing and debugging. Worked with a diverse array of large data sets and large scale data platforms. Followed agile methodologies and gitflow to develop java applications that run in docker containers. Contributed to code-review sessions and ensured that code quality aligns with business and project requirements.",
+      "description": "Developed, analyzed, and modified programming systems, including encoding, unit testing, and debugging. Worked with a diverse array of large data sets and large-scale data platforms. Followed agile methodologies and git-flow to develop java applications that run in Docker containers. Contributed to code-review sessions and ensured that code quality aligns with business and project requirements.",
       "duration": "Mar 2021 - Present",
       "title": "Data Engineer"
     },
     {
       "company": "Mosaic North America",
-      "description": "Gathered business requirements from the client, built and maintained business relationships. Analyzed information and configured ecommerce platform for building websites. Collaborated with the team and achieved success beyond the decided milestone.",
+      "description": "Gathered business requirements from the client, built and maintained business relationships. Analyzed information and configured an e-commerce platform for building websites. Collaborated with the team and achieved success beyond the decided milestone",
       "duration": "Sep 2020 - Dec 2020",
       "title": "Ecommerce Coordinator"
     }
@@ -89,10 +88,10 @@
     ],
     "familiar": [
       "Hadoop",
-      "Spark/Scala",
-      "Springboot",
-      "JavaScript",
-      "React JS"
+      "Maven",
+      "Jupyter Notebook",
+      "IntelliJ",
+      "Shopify"
     ],
     "proficient": [
       "Java",
@@ -103,5 +102,5 @@
       "Git"
     ]
   },
-  "summary": "A passionate learner, detail-oriented, responsible and committed engineer graduated with a Masters of Applied Computing degree from University of Windsor. Having experience and understanding of agile scrum methodology, willing to work beyond the comfort zone to achieve milestones. In addition, with the knowledge of RDBMS, SQL, Data modelling and Java, developed various applications following Software Development Life Cycle (SDLC) and enhanced analytical, strategic planning and communicaiton skills as a Data Engineer at Jarvis. With a keen interest to transform business needs into requirements aim to apply the skills in dynamic business environment to find innovative solutions for complex problems."
+  "summary": "A passionate learner, detail-oriented, responsible, and committed engineer graduated with a Masters of Applied Computing degree from the University of Windsor. Having experience and understanding of agile scrum methodology, willing to work beyond the comfort zone to achieve milestones. In addition, with the knowledge of RDBMS, SQL, Data modeling, and Java, developed various applications following Software Development Life Cycle (SDLC) and enhanced analytical, strategic planning, and communication skills as a Data Engineer at Jarvis. With a keen interest to transform business needs into requirements, I aim to apply the skills in a dynamic business environment to find innovative solutions for complex problems."
 }
